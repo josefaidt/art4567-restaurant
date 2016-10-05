@@ -1,8 +1,9 @@
-html, body {
-	background-color: #fff;
-	color: #FF0000;
-	font-family: 'Coda', cursive;
-	font-family: 'Fajalla One', sans-serif;
+/**********************************
+GENERAL
+***********************************/
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
 #wrapper {
@@ -15,17 +16,100 @@ a {
 	text-decoration: none;
 }
 
+ul, ol {
+	list-style: none;
+	list-style-image: none;
+}
+
+img {
+	max-width: 100%;
+}	
+
+
+/**********************************
+HEADING
+***********************************/
+
 #logo {
-	text-align: center;
+	float: left;
 	margin: 0;
 }
 
-/* white header with red lettering */
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+	font-family: 'Coda', sans-serif;
+	text-align: right;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+	font-size: 1.04em; /* fix header bloating when calling font size */
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 50px;
+	color: #ccc;
+}
+
+/**********************************
+TEMP FONT CLASSES FOR VISUAL TESTING
+***********************************/
+.font-coda {
+	font-family: 'Coda', sans-serif;
+	font-size: 120%;
+}
+
+.font-fjalla {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.font-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/**********************************
+COLORS
+***********************************/
+
+body {
+	background-color: #fff;
+	color: #999;
+}
+/* red background with white lettering */
 header {
-	background: #fff;
+	background: #ff0000;
 	border-color: #990000;
 }
 
-h1, h2 {
-	
+nav {
+	background: #ff0000;
+}
+
+a {
+	color: #990000;
+}
+
+/* nav link */
+nav a, nav a:visited {
+	color: #999;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+	color: #fff;
 }
