@@ -16,6 +16,11 @@ a {
 	text-decoration: none;
 }
 
+
+/**********************************
+NORMALIZATION
+***********************************/
+
 ul, ol {
 	list-style: none;
 	list-style-image: none;
@@ -23,16 +28,29 @@ ul, ol {
 
 img {
 	max-width: 100%;
+	max-height: 100%;
 }	
+
+h3, h4 {
+	margin: 0 0 1em 0;
+}
 
 
 /**********************************
 HEADING
 ***********************************/
 
+header {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%
+}
+
 #logo {
 	float: left;
 	margin: 0;
+	padding: 1px 0 3px 3px;
 }
 
 
@@ -44,13 +62,71 @@ NAVIGATION
 nav {
 	font-family: 'Coda', sans-serif;
 	text-align: right;
-	padding: 10px 0;
+	padding: 1% 2% 0 0;
 	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	font-size: 1.2em;
+	padding: 15px 20px;
 }
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-	font-size: 1.04em; /* fix header bloating when calling font size */
+	/*font-size: 1.04em;*/ /* fix header bloating when calling font size */
+}
+
+
+/**********************************
+SLIDER
+***********************************/
+
+#slider {
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+
+.slide {
+  width: 900px;
+  height: 500px;
+  float: left;
+  position: relative;
+}
+
+#slide-holder {
+  width: 400%;
+  position: relative;
+  left: 0;
+  will-change: transform;
+  animation: scroller 10s infinite;
+}
+
+@keyframes scroller {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-900px);
+  }
+  66% {
+    transform: translateX(-1800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 
@@ -62,7 +138,22 @@ footer {
 	font-size: 0.75em;
 	text-align: center;
 	padding-top: 50px;
+	clear: both;
 	color: #ccc;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+footer li {
+	display: inline-block;
+}
+
+.footer-nav {
+	padding: 0 5px;
 }
 
 /**********************************
@@ -79,6 +170,18 @@ TEMP FONT CLASSES FOR VISUAL TESTING
 
 .font-sans {
 	font-family: 'Open Sans', sans-serif;
+}
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.about-photo {
+	display: block;
+	max-width: 300px;
+	margin: 0 auto 30px;
+	border-radius: 30%;
 }
 
 
@@ -101,15 +204,27 @@ nav {
 }
 
 a {
-	color: #990000;
+	color: #ff8566;
+}
+
+footer a {
+	color: #999;
+}
+
+footer a.selected, footer a:hover {
+	color: #ff0000;
 }
 
 /* nav link */
 nav a, nav a:visited {
-	color: #999;
+	color: #e6e6e6;
 }
 
 /* selected nav link */
 nav a.selected, nav a:hover {
 	color: #fff;
+}
+
+#slider {
+	border: 1px solid #fff;
 }

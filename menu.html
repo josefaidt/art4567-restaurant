@@ -3,24 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cane's Menu</title>
-	<link href="https://fonts.googleapis.com/css?family=Coda|Fjalla+One" rel="stylesheet">
+	<!-- load fonts before main css where they are referred -->
+	<link href="https://fonts.googleapis.com/css?family=Coda|Fjalla+One|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<!-- header -->
 	<header>
-		<div>
-			<img src="" alt="" class="logo">
-			<nav class="main">
+		<img src="img/logo.png" alt="Raising Cane's Chicken Fingers" id="logo">
+		<nav>
 			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/menu.html">Menu</a></li>
-				<li><a href="/about.html">About Us</a></li>
-				<li><a href="/caniac-club.html">Caniac Club</a></li>
-				<li><a href="/contact.html">Locations</a></li>
-				<li><a href="/community.html">Community</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html" class="selected">Menu</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<!-- <li><a href="caniac-club.html">Caniac Club</a></li> -->
+				<li><a href="contact.html">Locations</a></li>
+				<li><a href="community.html">Community</a></li>
 			</ul>
 		</nav>
-		</div>
 	</header>
 	<!-- end header -->
 
@@ -58,20 +58,20 @@
 	<!-- END CONTENT -->
 
 	<!-- footer -->
-	<footer>
-		<ul>
-			<li><a href="/about.html">About Us</a></li>
-			<li><a href="/caniac-careers.html">Caniac Careers</a></li>
-			<li><a href="/contact.html">Contact</a></li>
-			<li><a href="/sitemap.html">Sitemap</a></li>
-		</ul>
-		<ul>
-			<li><a href="https://twitter.com/raisingcanes" target="_blank"><img src="" alt="logo-twitter"></a></li>
-			<li><a href="https://facebook.com/raisingcanes" target="_blank"><img src="" alt="logo-facebook"></a></li>
-			<li><a href="https://instagram.com/raisingcanes" target="_blank"><img src="" alt="logo-instagram"></a></li>
-			<li><a href="https://youtube.com/raisingcanes" target="_blank"><img src="" alt="logo-youtube"></a></li>
-		</ul>
-	</footer>
-	<!-- end footer -->
+		<footer>
+			<ul>
+				<li class="footer-nav"><a href="about.html">About</a></li>
+				<!-- <li class="footer-nav"><a href="caniac-careers.html">Caniac Careers</a></li> -->
+				<li class="footer-nav"><a href="contact.html">Contact</a></li>
+				<li class="footer-nav"><a href="sitemap.html">Sitemap</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://twitter.com/raisingcanes" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a></li>
+				<li><a href="https://facebook.com/raisingcanes" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a></li>
+				<!-- <li><a href="https://instagram.com/raisingcanes" target="_blank"><img src="" alt="Instagram Logo"></a></li>
+				<li><a href="https://youtube.com/raisingcanes" target="_blank"><img src="" alt="Youtube Logo"></a></li> -->
+			</ul>
+		</footer>
+		<!-- end footer -->
 </body>
 </html>
