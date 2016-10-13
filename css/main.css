@@ -322,7 +322,8 @@ PAGE: SITEMAP;
 	list-style-type: none;
 	margin: -20px 0 0;
 	padding: 0;
-	width: 200px;
+	text-indent: 10%;
+	width: 800px;
 	overflow: auto;
 }
 
@@ -338,8 +339,8 @@ PAGE: SITEMAP;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	text-indent: 10%;
-	width: 200px;
+	text-indent: 15%;
+	width: 800px;
 	overflow: auto;
 }
 
